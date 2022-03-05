@@ -52,6 +52,7 @@ def get_username(d):
 def get_thumb_links(q):
     d = get_driver()
     # REPLACE username with your preferred artist
+    d.get('https://www.deviantart.com/slickshwart/gallery/')
     unique_img = scroll_page_down(d)
     time.sleep(0.5)
     for img in unique_img:
